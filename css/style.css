@@ -64,6 +64,7 @@ form.paypal input[type="image"]{
     background-color: #fff;
     border: 2px solid #ccc;
 }
+form #website{ display:none; }
 .submit{
     border-color: red;
     background: red;

@@ -3,6 +3,7 @@
     // $company = $_POST ['company'];
     $email = $_POST ['email'];
     $subject = "Subscribe";
+    if(!empty($_POST['website'])) die();
     // $message = $_POST ['message'];
 
     // $email_from = 'omarhamza1115@gmail.com';

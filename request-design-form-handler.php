@@ -1,9 +1,11 @@
 <?php
-    $name = $_POST ['name'];
+    $transID = $_POST ['name'];
     // $company = $_POST ['company'];
     $email = $_POST ['email'];
-    $message = $_POST ['message'];
+    $message = $_POST ['design-name'];
+    //in your php ignore any submissions that inlcude this field
     if(!empty($_POST['website'])) die();
+
     // $email_from = 'omarhamza1115@gmail.com';
     // $email_subject = "New Email From Website";
     // $email_body = "User Name: $name.\n".
@@ -14,12 +16,12 @@
     $to = "contact@lefty-mummy.com";
     // $headers = "from: $email_from \r\n";
     $body="";
-    $body .= "From: ".$name. "\r\n";
+    $body .= "Transaction ID: ".$transID. "\r\n";
     // $body .= "Company: ".$company. "\r\n";
     $body .= "Email: ".$email. "\r\n";
-    $body .= "Message: ".$message. "\r\n";
+    $body .= "design-name: ".$message. "\r\n";
 
-    mail($to,$name,$body);
+    mail($to,$transID,$body);
     header("Location: index.html");
     
 ?>
