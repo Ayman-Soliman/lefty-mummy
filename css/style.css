@@ -5,7 +5,7 @@
     --orange: #ff3300;
     --primary: red;
     --bg: #000;
-    --gold: #ffa500;
+    --gold: #ffa600;
     /* --blue: #ff4040;
     --orange: orange;
     --primary: #009cde;
@@ -59,7 +59,7 @@ form.paypal input[type="image"]{
     font-size: 2rem;
     font-weight: 400;
     text-transform: none;
-    line-height: 2;
+    line-height: 1.5;
     color: #212529;
     background-color: #fff;
     border: 2px solid #ccc;
@@ -97,7 +97,7 @@ form #website{ display:none; }
     box-shadow: 0 0 10px var(--primary);
 }
 .pad-top{
-    padding-top: 6rem;
+    padding-top: 2rem;
 }
 .heading{
     border-bottom: 0.3rem solid var(--primary);
@@ -114,7 +114,7 @@ form #website{ display:none; }
     letter-spacing: 0.3rem;
 }
 .card{
-    margin: 2rem 0;
+    margin: 2rem ;
     padding: 1rem;
     display: flex;
     box-shadow: 0 0 10px #000;
@@ -140,7 +140,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    height: 8rem;
+    height: 6rem;
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -155,11 +155,11 @@ nav .logo a{
 }
 nav .logo a img{
     padding-right: 2rem;
-    width: 8rem;
+    width: 6rem;
 }
 nav .logo h2{
     font-family: cursive;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 nav .logo a:hover{
@@ -173,14 +173,14 @@ nav .links ul{
 }
 nav .links ul li a{
     font-size: 1.5rem;
-    padding: 1rem;
-    border: 3px solid transparent;
+    padding: .5rem;
+    border: 1px solid transparent;
     background: transparent;
 }
 nav .links ul li a.active,
 nav .links ul li a:hover{
     background: var(--bg);
-    border: 3px solid #fff;
+    border: 1px solid var(--gold);
 }
 nav .links ul li a{
     text-decoration: none;
@@ -203,14 +203,14 @@ header .header-1{
     height: 90vh;
 }
 header .header-1 .logo img{
-    max-height: 30rem;
-    margin-bottom: 40px;
+    max-height: 20rem;
+    margin-bottom: 20px;
 }
 header .header-1 .logo h2{
     font-family: 'mummy-font';
     font-size: 5rem;
     font-weight: 300;
-    color: #fff;
+    color: var(--gold);
     line-height: 6rem;
 }
 header .header-1 .description{
@@ -218,14 +218,15 @@ header .header-1 .description{
     font-size: 2rem;
     margin-top: 4rem;
     line-height: 4rem;
-    padding: 2rem;
+    padding: 4rem;
     background: rgba(255,255,255,0.1);
 }
 header .header-1 .description span{
-    color: var(--gold);
+    color: var(--blue);
     font-size: 2.3rem;
 }
 header .header-1 .description span:nth-child(1){
+    color: var(--gold);
     font-family: 'mummy-font', cursive;
     border-bottom: 0.2rem solid var(--gold);
 }
@@ -237,7 +238,7 @@ header .header-1 .description span:nth-child(1){
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .gallery{
@@ -275,12 +276,12 @@ header .header-1 .description span:nth-child(1){
     content: "50% off";
     top: 0;
     left: 0;
-    width: 50%;
-    height: 15%;
-    background: #fff;
+    width: 25%;
+    height: 5%;
+    background: #000;
     border: 0.4rem solid var(--bg);
-    color: var(--primary);
-    font-size: 3rem;
+    color: var(--gold);
+    font-size: 1.5rem;
     letter-spacing: 0.2rem;
     text-align: center;
     z-index: 2;
@@ -386,7 +387,7 @@ header .header-1 .description span:nth-child(1){
     top: 0; left: 0;
     width: 100%;
     min-height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 1);
     z-index: 1000;
     display: none;
 }
@@ -410,6 +411,9 @@ header .header-1 .description span:nth-child(1){
     top: 2%; right: 4%;
     font-size: 3rem;
     cursor: pointer;
+    background-color: var(--gold);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 
 }
 .popup-overlay .popup .images{
@@ -422,8 +426,8 @@ header .header-1 .description span:nth-child(1){
     padding-left: 1rem;
 }
 .popup-overlay .popup .images .big-image{
-    width: 50rem;
-    height: 50rem;
+    width: 45rem;
+    height: 45rem;
     border-radius: 1rem;
     text-align: center;
 }
@@ -432,7 +436,7 @@ header .header-1 .description span:nth-child(1){
     width: 100%;
     object-fit: cover;
     border-radius: 1rem;
-    border: 0.3rem solid var(--primary);
+    border: 0.3rem solid #000;
 }
 .popup-overlay .popup .images .small-iamges{
     display: flex;
@@ -454,13 +458,13 @@ header .header-1 .description span:nth-child(1){
     height: 100%;
     object-fit: cover;
     border-radius: 1rem;
-    border: 0.3rem solid #000;
+    border: 0.2rem solid transparent;
     transform: scale(1);
 }
 .popup-overlay .popup .images .small-iamges img.active{
-    border: 0.3rem solid var(--primary);
+    border: 0.2rem solid var(--gold);
     transform: scale(1.05);
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 .popup-overlay .popup .content{
     padding: 4rem 2rem;
@@ -480,8 +484,8 @@ header .header-1 .description span:nth-child(1){
     color: var(--blue);
     margin-left: 2rem;
     margin-right: 2rem;
-    border: 0.2rem solid var(--primary);
-    border-radius: 0.5rem;
+    border-bottom: 0.2rem solid var(--primary);
+    /* border-radius: 0.5rem; */
     font-size: 2.5rem;
 }
 .popup-overlay .popup .content .price .before{
@@ -496,7 +500,7 @@ header .header-1 .description span:nth-child(1){
 .popup-overlay .popup .content .description{
     font-size: 2rem;
     line-height: 3rem;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 .popup-overlay .popup .content h4.file-formats{
     font-size: 1.8rem;

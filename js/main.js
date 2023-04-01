@@ -59,7 +59,7 @@ $(document).ready(function(){
     
     
     $(window).on('scroll load', function(){
-        if($(window).scrollTop() > 180){
+        if($(window).scrollTop() > 380){
             $('nav').addClass('fixed-header');
         }else
         {
