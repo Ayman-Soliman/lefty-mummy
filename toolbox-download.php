@@ -10,7 +10,7 @@
     <!-- custom css file -->
     <link rel="stylesheet" href="css/framework.css">
     <link rel="stylesheet" href="css/articles.css">
-    <link rel="icon" type="image/icon type" href="/images/title-logo.svg">
+    <link rel="icon" type="image/icon" href="/images/title-logo.svg">
 </head>
 <body>
     <nav>
