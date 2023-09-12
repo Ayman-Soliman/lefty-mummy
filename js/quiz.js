@@ -167,8 +167,8 @@ function showResult(count){
 }
 function showWrongQuestions(qObject, wrongQuestsArr, wrongAnswerArr){
     
-    wrongQuestDiv.style.display ="block";
     for (let i = 0; i < wrongQuestsArr.length; i++) {
+        wrongQuestDiv.style.display ="block";
         //<div class="wrong-quiz-area"></div>
         // <div class="wrong-answers-area"></div>
         let wrongQuizArea = document.createElement("div");
