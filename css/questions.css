@@ -24,12 +24,12 @@ body{
     text-align: right;
 }
 
-.quiz-app .wrong-quest{
-    display: none;
-}
 .quiz-app .wrong-quest h3{
     text-align: center;
     color: #dc0a0a;
+}
+.quiz-app .wrong-quest{
+    display: none;
 }
 .quiz-app .quiz-area,
 .quiz-app .wrong-quiz-area{
