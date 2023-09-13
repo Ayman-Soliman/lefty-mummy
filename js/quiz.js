@@ -53,7 +53,7 @@ function getQuestions(){
         }
     }
     
-    myRequest.open("GET", "js/revesion_mcq.json", true);
+    myRequest.open("GET", "js/revision_mcq.json", true);
     myRequest.send();
 }
 
