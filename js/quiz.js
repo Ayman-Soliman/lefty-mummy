@@ -52,7 +52,6 @@ function getQuestions(){
             // setTimeout(counterUp(questionCount),1000);
         }
     }
-    
     myRequest.open("GET", "js/revision_mcq.json", true);
     myRequest.send();
 }
