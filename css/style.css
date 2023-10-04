@@ -30,7 +30,7 @@
     color: #fff;
 }
 html{
-    font-size: 62.5%;
+    font-size: 52.5%;
     scroll-behavior: smooth;
 }
 .container{
@@ -81,6 +81,7 @@ form #website{ display:none; }
     box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5);
 }
 .btn{
+    position: relative;
     width: 16rem;
     background: #000;
     color: #fff;
@@ -89,6 +90,16 @@ form #website{ display:none; }
     border: none;
     outline: none;
 }
+/* .btn::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    color: #fff;
+    top: 0;
+    left: 0;
+} */
 .btn.active,
 .btn:hover{
     letter-spacing: 0.1rem;
@@ -200,7 +211,7 @@ header .header-1{
     text-align: center;
     background: #000;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 header .header-1 .logo img{
     max-height: 20rem;
@@ -215,6 +226,9 @@ header .header-1 .logo h2{
 }
 header .header-1 .description{
     color: #999;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 2rem;
     margin-top: 4rem;
     line-height: 4rem;

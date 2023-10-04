@@ -30,7 +30,7 @@
     color: #fff;
 }
 html{
-    font-size: 62.5%;
+    font-size: 50%;
     /* overflow-x: hidden; */
     scroll-behavior: smooth;
 }
@@ -116,7 +116,7 @@ body{
 }
 
 .card .text-side h4{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--blue);
 }
 
