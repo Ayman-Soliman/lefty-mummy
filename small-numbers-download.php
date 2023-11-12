@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>small numbers</title>
     <!-- font-awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="css/all.min.css">
     <!-- custom css file -->
     <link rel="stylesheet" href="css/framework.css">
     <link rel="stylesheet" href="css/articles.css">
@@ -61,7 +62,8 @@
     ?>
     
     <!-- jquery cdn link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="js/jquery-3.6.3.min.js"></script>
     <!-- custom script file -->
     <script src="js/main.js"></script>
 </body>
