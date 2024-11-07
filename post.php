@@ -51,9 +51,9 @@
             $post_content = explode('[splithere]',$post['content']);
         ?>
     <div class='main-heading pt-5 m-2'>
-            <h1 class='heading lang-desc english'>english <?=$post_title[0]?></h1>
-            <h1 class='heading lang-desc spanish'>spanish <?=count($post_title)>1?$post_title[1]:$post_title[0]?></h1>
-            <h1 class='heading lang-desc french'>french <?=count($post_title)>2?$post_title[2]:$post_title[0]?></h1>
+            <h1 class='heading lang-desc english'><?=$post_title[0]?></h1>
+            <h1 class='heading lang-desc spanish'><?=count($post_title)>1?$post_title[1]:$post_title[0]?></h1>
+            <h1 class='heading lang-desc french'><?=count($post_title)>2?$post_title[2]:$post_title[0]?></h1>
     </div>
     <div class="flex-center">
         <div class="card" style="width: 80%;">
