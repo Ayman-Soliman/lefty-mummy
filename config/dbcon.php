@@ -23,7 +23,7 @@ if ($_SERVER['HTTP_HOST'] == 'localhost:8080' || $_SERVER['HTTP_HOST'] == '127.0
 }
 
 $con = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
-
+$con->set_charset("utf8mb4");
 if (!$con) {
     die('connection error:' . mysqli_connect_error());
 }
