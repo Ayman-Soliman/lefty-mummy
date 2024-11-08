@@ -127,8 +127,12 @@ if (isset($_SESSION['auth'])) {
 ?>
 <!-- <script src="https://www.paypal.com/sdk/js?client-id=AbW4UEcTSpoqMmEJcKlywDWCbmGvt_XGDzgoHK53UlNL9gfoEmcNcDYOBrKq-qONj5PQhB3ZOsKibn89&components=buttons&enable-funding=paylater,venmo,card" data-sdk-integration-source="integrationbuilder_sc"></script> -->
 <!-- <script src="https://www.paypal.com/sdk/js?client-id=AYFx-YFsoZJTuE5x9D1i6XS64tueX2XnGpcOsO-2HVtdw5KiCeh3k5RtuhP_M-m3AH0WCaHCQJ2pAJRD&components=buttons&enable-funding=paylater,venmo,card" data-sdk-integration-source="integrationbuilder_sc"></script> -->
-<script src="https://www.paypal.com/sdk/js?client-id=AXhm8fwEy-gNTibq_gwXq2enxriRHoqNE89EJwK8NdLVQUI_8MwfthcNvN2EKdIjmDT4Vqoc9s4a0BhE&components=buttons&enable-funding=paylater,venmo,card" data-sdk-integration-source="integrationbuilder_sc"></script>
 <!-- <script src="https://www.paypal.com/sdk/js?client-id=ARt51oFoFedcawnngx-JGs3AwQDd9UDs8ak_LeG6qeFBgzKMRv3i4WHGisLi6V2MfdJ1eV3ZkuYoIizc&components=buttons&enable-funding=paylater,venmo,card" data-sdk-integration-source="integrationbuilder_sc"></script> -->
+
+<!-- test sandbox id -->
+<!-- <script src="https://www.paypal.com/sdk/js?client-id=AXhm8fwEy-gNTibq_gwXq2enxriRHoqNE89EJwK8NdLVQUI_8MwfthcNvN2EKdIjmDT4Vqoc9s4a0BhE&components=buttons&enable-funding=paylater,venmo,card" data-sdk-integration-source="integrationbuilder_sc"></script> -->
+<!-- live  -->
+<script src="https://www.paypal.com/sdk/js?client-id=AQIpTHhGpu-CN6YFWndvS0nXuozRD-JI65jrHI9JqV8JCQebHjf1tqvlJoNts9KdZW-6TWlcWINwRKEO&components=buttons&enable-funding=paylater,venmo,card" data-sdk-integration-source="integrationbuilder_sc"></script>
 <SCript>
     window.paypal.Buttons({
         // Start
