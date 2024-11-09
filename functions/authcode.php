@@ -29,7 +29,7 @@ if (isset($_POST['register_btn'])) {
 
     }else{
         
-        if ($password === $cpassword) {
+        if ($password === $cpassword && $password!=" ") {
             $hashd_pass = sha1($password);
             $user_query = "INSERT INTO users (first_name,last_name , email, password, phone, address, country_id)
             VALUES ('$first_name', '$last_name', '$email', '$hashd_pass', '$phone', '$address', '$country_id')";
