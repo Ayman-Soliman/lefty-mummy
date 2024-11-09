@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /vendor/
+Disallow: /cart.php
+Disallow: /wishlist.php
+Disallow: /my-orders.php
+Disallow: /my-designs.php
