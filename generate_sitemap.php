@@ -32,6 +32,7 @@ function getUrls($pdo, $table, $id_column, $url_path) {
 // https://lefty-mummy.com/post.php?post_id=1&slug=The%20Ultimate%20Guide%20to%20Choosing%20Laser%20Cut%20Gift%20Designs%20for%20Special%20Occasions
 $product_urls = getUrls($pdo, 'products', 'id', 'product.php?prod_id=');
 $post_urls = getUrls($pdo, 'posts', 'id', 'post.php?post_id=');
+$post_urls = getUrls($pdo, 'apparel', 'id', 'apparel.php?store_id=');
 
 // Combine all URLs
 $all_urls = array_merge($product_urls, $post_urls);
