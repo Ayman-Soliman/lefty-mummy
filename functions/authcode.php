@@ -15,11 +15,11 @@ if (isset($_POST['register_btn'])) {
     $email = filter_var( htmlspecialchars(mysqli_real_escape_string($con,$_POST['email'])), FILTER_SANITIZE_EMAIL);
     $password = htmlspecialchars(mysqli_real_escape_string($con,$_POST['password']));
     $cpassword = htmlspecialchars(mysqli_real_escape_string($con,$_POST['cpassword']));
-    $phone = htmlspecialchars(mysqli_real_escape_string($con,$_POST['phone']));
-    $address = htmlspecialchars(mysqli_real_escape_string($con,$_POST['address']));
-    if (!preg_match("/^[a-zA-Z0-9 -]*$/", $address)) {
-        redirect('../signup.php',"message_error", "Address Not Valid");
-    }
+    // $phone = htmlspecialchars(mysqli_real_escape_string($con,$_POST['phone']));
+    // $address = htmlspecialchars(mysqli_real_escape_string($con,$_POST['address']));
+    // if (!preg_match("/^[a-zA-Z0-9 -]*$/", $address)) {
+    //     redirect('../signup.php',"message_error", "Address Not Valid");
+    // }
     $country_id = mysqli_real_escape_string($con,$_POST['country_id']);
     
     $chck_email_query = "SELECT email FROM users WHERE email = '$email'";
@@ -31,8 +31,11 @@ if (isset($_POST['register_btn'])) {
         
         if ($password === $cpassword && $password!=" ") {
             $hashd_pass = sha1($password);
-            $user_query = "INSERT INTO users (first_name,last_name , email, password, phone, address, country_id)
-            VALUES ('$first_name', '$last_name', '$email', '$hashd_pass', '$phone', '$address', '$country_id')";
+            // $user_query = "INSERT INTO users (first_name,last_name , email, password, phone, address, country_id)
+            // VALUES ('$first_name', '$last_name', '$email', '$hashd_pass', '$phone', '$address', '$country_id')";
+            // without phone and address
+            $user_query = "INSERT INTO users (first_name,last_name , email, password, country_id)
+            VALUES ('$first_name', '$last_name', '$email', '$hashd_pass', '$country_id')";
             $user_query_run = mysqli_query($con, $user_query);
             
             if ($user_query_run) {

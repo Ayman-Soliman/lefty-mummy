@@ -27,8 +27,8 @@
                 <input class="w-full  p-10 block" type="password" name="cpassword" placeholder="Confirm Your Password" required>
                 <i class="eye far fa-eye absolute bg-grey flex-center p-10"></i>
             </div>
-            <input class="w-full mb-10 p-10 block" type="number" name="phone" placeholder="Your Phone Number" required>
-            <input class="w-full mb-10 p-10 block" type="text" name="address" placeholder="Your Address">
+            <!-- <input class="w-full mb-10 p-10 block" type="number" name="phone" placeholder="Your Phone Number" required>
+            <input class="w-full mb-10 p-10 block" type="text" name="address" placeholder="Your Address"> -->
             
             <div class="relative">
                 <span class="select block w-full"></span>
