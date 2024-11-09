@@ -5,12 +5,21 @@ include 'myfunctions.php';
 session_start();
 if (isset($_POST['register_btn'])) {
     $first_name =htmlspecialchars(mysqli_real_escape_string($con,$_POST['first_name']));
+    if (!preg_match("/^[a-zA-Z0-9]*$/", $first_name)) {
+        redirect('../signup.php',"message_error", "Name Not Valid");
+    }
     $last_name = htmlspecialchars(mysqli_real_escape_string($con,$_POST['last_name']));
-    $email = htmlspecialchars(mysqli_real_escape_string($con,$_POST['email']));
+    if (!preg_match("/^[a-zA-Z0-9]*$/", $last_name)) {
+        redirect('../signup.php',"message_error", "Name Not Valid");
+    }
+    $email = filter_var( htmlspecialchars(mysqli_real_escape_string($con,$_POST['email'])), FILTER_SANITIZE_EMAIL);
     $password = htmlspecialchars(mysqli_real_escape_string($con,$_POST['password']));
     $cpassword = htmlspecialchars(mysqli_real_escape_string($con,$_POST['cpassword']));
     $phone = htmlspecialchars(mysqli_real_escape_string($con,$_POST['phone']));
     $address = htmlspecialchars(mysqli_real_escape_string($con,$_POST['address']));
+    if (!preg_match("/^[a-zA-Z0-9 -]*$/", $address)) {
+        redirect('../signup.php',"message_error", "Address Not Valid");
+    }
     $country_id = mysqli_real_escape_string($con,$_POST['country_id']);
     
     $chck_email_query = "SELECT email FROM users WHERE email = '$email'";
