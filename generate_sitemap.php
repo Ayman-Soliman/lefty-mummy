@@ -39,7 +39,55 @@ $all_urls = array_merge($product_urls, $post_urls);
 
 // Sitemap XML Header
 $sitemap = '<?xml version="1.0" encoding="UTF-8"?>';
-$sitemap .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+$sitemap .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">';
+
+$sitemap.= '<url>
+<loc>https://lefty-mummy.com/</loc>
+<changefreq>daily</changefreq>
+<priority>1.00</priority>
+</url>
+
+<url>
+<loc>https://lefty-mummy.com/index.php</loc>
+<changefreq>daily</changefreq>
+<priority>0.80</priority>
+</url>
+
+<url>
+<loc>https://lefty-mummy.com/blog.php</loc>
+<changefreq>daily</changefreq>
+<priority>0.80</priority>
+</url>
+
+<url>
+<loc>https://lefty-mummy.com/categories.php</loc>
+<changefreq>daily</changefreq>
+<priority>0.80</priority>
+</url>
+
+<url>
+<loc>https://lefty-mummy.com/all-products.php</loc>
+<changefreq>daily</changefreq>
+<priority>0.80</priority>
+</url>
+
+<url>
+<loc>https://lefty-mummy.com/apparel.php?store_id=1&amp;amazon_store=usa</loc>
+<changefreq>daily</changefreq>
+<priority>0.80</priority>
+</url>
+
+<url>
+<loc>https://lefty-mummy.com/signin.php</loc>
+<changefreq>daily</changefreq>
+<priority>0.80</priority>
+</url>
+
+<url>
+<loc>https://lefty-mummy.com/signup.php</loc>
+<changefreq>daily</changefreq>
+<priority>0.80</priority>
+</url>';
 
 // Add each URL to the sitemap
 foreach ($all_urls as $url) {
