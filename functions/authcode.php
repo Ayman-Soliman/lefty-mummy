@@ -5,11 +5,11 @@ include 'myfunctions.php';
 session_start();
 if (isset($_POST['register_btn'])) {
     $first_name =htmlspecialchars(mysqli_real_escape_string($con,$_POST['first_name']));
-    if (!preg_match("/^[a-zA-Z0-9]*$/", $first_name)) {
+    if (!preg_match("/^[a-zA-Z]*$/", $first_name)) {
         redirect('../signup.php',"message_error", "Name Not Valid");
     }
     $last_name = htmlspecialchars(mysqli_real_escape_string($con,$_POST['last_name']));
-    if (!preg_match("/^[a-zA-Z0-9]*$/", $last_name)) {
+    if (!preg_match("/^[a-zA-Z]*$/", $last_name)) {
         redirect('../signup.php',"message_error", "Name Not Valid");
     }
     $email = filter_var( htmlspecialchars(mysqli_real_escape_string($con,$_POST['email'])), FILTER_SANITIZE_EMAIL);
