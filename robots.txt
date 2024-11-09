@@ -4,3 +4,4 @@ Disallow: /cart.php
 Disallow: /wishlist.php
 Disallow: /my-orders.php
 Disallow: /my-designs.php
+Sitemap: https://lefty-mummy.com/sitemap.xml
