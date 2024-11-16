@@ -11,7 +11,7 @@ include 'functions/myfunctions.php';
     $body .= "Name: ".$name. "\r\n";
     $body .= "Email: ".$email. "\r\n";
     $body .= "Message: ".$message. "\r\n";
-    if ($status == '1') {
+    if ($status == '1' && $message !="") {
 
 
         mail($to,$name,$body);
