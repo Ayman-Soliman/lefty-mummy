@@ -4,12 +4,12 @@ require 'jwt.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents("php://input"));
-    $username = $data->username ?? '';
+    $email = $data->email ?? '';
     $password = $data->password ?? '';
     $hashed_pass = sha1($password);
-    
-    $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
-    $stmt->bindParam(':username', $username);
+
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE email = :email");
+    $stmt->bindParam(':email', $email);
     $stmt->execute();
     $user = $stmt->fetch();
 
