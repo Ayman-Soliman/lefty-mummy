@@ -12,13 +12,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bindParam(':email', $email);
     $stmt->execute();
     $user = $stmt->fetch();
+    
+    if ($user && $hashed_pass === $user['password']) {
+        $payload = [
+            "iss" => "https://lefty-mummy.com/",
+            "aud" => "https://lefty-mummy.com/",
+            "iat" => time(),
+            "exp" => time() + (60 * 60), // Token expires in 1 hour
+            "user_id" => $user['id']
+        ];
 
-    if ($user && password_verify($hashed_pass, $user['password'])) {
-        $payload = ['user_id' => $user['id'], 'exp' => time() + 3600];
+        // $payload = ['user_id' => $user['id'], 'exp' => time() + 3600];
         $token = createJWT($payload);
         echo json_encode(['token' => $token]);
     } else {
         http_response_code(401);
         echo json_encode(['message' => 'Invalid credentials']);
+        
     }
 }
