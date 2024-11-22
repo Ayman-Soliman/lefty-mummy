@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   
     try {
         // Check if the product is already in the cart
-        $stmt = $pdo->prepare("SELECT id FROM cart WHERE user_id = :user_id AND prod_id = :product_id");
+        $stmt = $pdo->prepare("SELECT id FROM carts WHERE user_id = :user_id AND prod_id = :product_id");
         $stmt->bindParam(':user_id', $user_id);
         $stmt->bindParam(':product_id', $product_id);
         $stmt->execute();
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo json_encode(['message' => 'Product already in the cart']);
         } else {
             // Add product to the cart
-            $stmt = $pdo->prepare("INSERT INTO cart (user_id, prod_id) VALUES (:user_id, :product_id)");
+            $stmt = $pdo->prepare("INSERT INTO carts (user_id, prod_id) VALUES (:user_id, :product_id)");
             $stmt->bindParam(':user_id', $user_id);
             $stmt->bindParam(':product_id', $product_id);
             $stmt->execute();
