@@ -333,8 +333,68 @@ const LoginScreen = ({ navigation }) => {
 
 export default LoginScreen;
 ```
-
+addToCart.js (Frontend React Native Integration)
+This file handles the API call to the addToCart.php endpoint.
 ---
+
+import API from './axiosConfig';
+
+export const addToCart = async (token, productId) => {
+  try {
+    const response = await API.post(
+      '/addToCart.php',
+      { product_id: productId },
+      {
+        headers: {
+          Authorization: token, // Pass the token in the Authorization header
+        },
+      }
+    );
+    return response.data.message;
+  } catch (error) {
+    throw new Error(
+      error.response?.data?.message || 'Failed to add product to cart'
+    );
+  }
+};
+
+Example Usage in CartScreen.js
+
+import React, { useState } from 'react';
+import { View, Text, Button, Alert } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { addToCart } from '../api/addToCart';
+
+const CartScreen = () => {
+  const [productId, setProductId] = useState(1); // Example product ID
+
+  const handleAddToCart = async () => {
+    try {
+      const token = await AsyncStorage.getItem('token'); // Retrieve token
+      if (!token) {
+        Alert.alert('Error', 'You are not logged in');
+        return;
+      }
+
+      const message = await addToCart(token, productId);
+      Alert.alert('Success', message);
+    } catch (error) {
+      Alert.alert('Error', error.message);
+    }
+  };
+
+  return (
+    <View>
+      <Text>Cart Screen</Text>
+      <Button title="Add to Cart" onPress={handleAddToCart} />
+    </View>
+  );
+};
+
+export default CartScreen;
+
+
+
 
 ### Let me know if you need any additional details or refinements!
 
