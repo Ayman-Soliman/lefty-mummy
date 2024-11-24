@@ -32,9 +32,8 @@ define('DB_NAME', 'leftpsno_lm_ecom');
 define('DB_USER', 'leftpsno_lefty-mummy');
 define('DB_PASS', 'omar-hamza-ali-2011-2015-2019');
 
-try {
-    $pdo = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USER, DB_PASS);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("Database connection failed: " . $e->getMessage());
+$con = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
+$con->set_charset("utf8mb4");
+if (!$con) {
+    die('connection error:' . mysqli_connect_error());
 }

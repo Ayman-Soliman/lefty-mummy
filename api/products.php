@@ -2,7 +2,8 @@
 require 'config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    $stmt = $pdo->query("SELECT * FROM products");
-    $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    echo json_encode($products);
+    $query = "SELECT * FROM 'products' WHERE status = '1'";
+    $query_run = mysqli_query($con, $query);
+    // return $query_run;
+    echo json_encode($query_run);
 }
