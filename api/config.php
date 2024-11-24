@@ -12,9 +12,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 // Main API logic
 echo json_encode(["message" => "CORS is configured!"]);
-?>
-
-<?php
 
 // config.php: Database configuration
 if ($_SERVER['HTTP_HOST'] == 'localhost:8080' || $_SERVER['HTTP_HOST'] == '127.0.0.1') {
