@@ -82,27 +82,58 @@
     <div class="description mt-10 mb-10 w-full">
         
     <!-- -------------------------Copy this from here------------------------------>
-    <p>
-    Enjoy a classic game with this beautifully crafted Tic Tac Toe board design, available in three convenient sizes: 10 x 10 cm, 15 x 15 cm, and 20 x 20 cm. Perfect for family game nights or as a decorative gift, this design offers a fun, timeless activity that’s suitable for all ages. Its compact, elegant construction makes it a great addition to any home or game collection.
-    </p>
+    <p>Kickstart your creative journey this New Year with our exclusive All-in-One Laser-Cut Design Bundle! Get every design in our collection at an unbeatable price. Perfect for crafting personalized gifts, unique home decor, and standout projects for every occasion.</p>
     <h5 class="c-red pt-2">
-        Key Features:
+        This bundle includes:
     </h5>
-<p>
-Classic Tic Tac Toe board for all ages
-</p>
-<p>
-Perfect for family game nights and as a decorative gift
-</p>
-<p>
-
-    <span class="c-red">Available Sizes :-</span>
+    <span class="c-red">Three Sizes Alphabet boxes :-</span>
     <ul>
-        <li>- 10 x 10 cm</li>
-        <li>- 15 x 15 cm</li>
-        <li>- 20 x 20 cm</li>
+        <li>- Alphabet Gift Box Design Set - 30x40 cm with 8 cm Height [Big Size].</li>
+        <li>- Medium Personalized Alphabet Gift Box Design Set - 25x18.5 cm, 5 cm Height. </li>
+        <li>- Small Personalized Alphabet Gift Box Design Set - 13.5x10 cm, 3 cm Height</li>
     </ul>
-</p>
+    <img class="rad-10 " src="vendor/uploads/media-library/1730655759_lm_0.jpg" alt="" style="width:150px; border: 0.2rem solid #000;">
+    <br>
+    <p class="c-red">Alphabet Pairs with Heart Gift Box Design A-Z Set with Heart Boxes (25x75 cm) :-</p>
+    <img class="rad-10 " src="vendor/uploads/media-library/1730995433_lm_2.webp" alt="" style="width:150px; border: 0.2rem solid #000;">
+    <br>
+    <span class="c-red">Two Sizes Number boxes :-</span>
+    <ul>
+        <li>- Complete Set for Special Occasions (30—40 cm, 8 cm Height) [Big Size].</li>
+        <li>- Medium Number Gift Box Design - 25x19 cm and a height of 5 cm Set for Special Occasions. </li>
+    </ul>
+    <br>
+    <span class="c-red">Specially boxes :-</span>
+    <ul>
+        <li>- Small Drawer Gift Box Design - 10x18 cm for Elegant Storage.</li>
+        <li>- Toolbox Style Gift Box Design - 13.5x22.5 cm for Versatile Storage. </li>
+        <li>- Barrel-Style Round Box with Rotating Compartments. </li>
+        <li>- Graduation Cap Gift Box Design for Memorable Graduation Gifts. </li>
+    </ul>
+    <br>
+    <span class="c-red">Elegant Lanterns :-</span>
+    <ul>
+        <li>- Elegant Lantern Design in Three Sizes - Perfect for Any Space.</li>
+        <li>- Elegant Ceiling Lamp Box with Geometric Islamic Pattern - 60 x 60 x 15 cm. </li>
+    </ul>
+    <br>
+    <span class="c-red">Board Games :-</span>
+    <ul>
+        <li>- Tic Tac Toe Game Design – Available in 3 Sizes.</li>
+    </ul>
+    <br>
+    <span class="c-red">Father's Day :-</span>
+    <ul>
+        <li>- Father’s Day Gift Box Set – DAD, Superman, and Tie-Shaped Designs.</li>
+    </ul>
+    <br>
+    <!-- --------------------------------- -->
+    <p>
+    Whether you're a hobbyist or a small business owner, this collection is your ultimate toolkit for laser cutting success. Offer available for a limited time only—don't miss out!
+        <br>
+    Start the New Year by bringing your creative ideas to life. Download now and save big!
+    </p>
+    
 <p>
 <span class="c-red">File Formats:</span> Includes DXF, SVG, AI, PDF, and EPS, ensuring compatibility with most laser cutting machines.
 </p>
