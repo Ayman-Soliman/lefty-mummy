@@ -46,14 +46,14 @@ $page_title="Amazon Apparel";
                             <?php
                             foreach ($apparel as $tshirt) {
                         ?>
-                            <div class="card" style="width: ;">
+                            <div class="card" style="">
                                 <img src="vendor/uploads/apparel/<?=$tshirt['thumb_img']?>" class="card-img-top" alt="<?=str_replace('_', ' ',$tshirt['slug'])?>">
                                 <div class="card-body">
                                     <h5 class="card-title"><?=$tshirt['title']?></h5>
                                     <p class="card-text"><?=$tshirt['description']?></p>
                                     <p class="card-text c-orange">$<?=$tshirt['price']?></p>
                                     
-                                    <a href="<?=$tshirt['url']?>" class="btn btn-primary">Go somewhere</a>
+                                    <a href="<?=$tshirt['url']?>" class="btn btn-primary">View On Amazon</a>
                                 </div>
                             </div>
                         <?php

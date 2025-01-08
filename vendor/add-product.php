@@ -143,7 +143,7 @@
                     <!-- <img id="preview" src=""/> -->
                     Upload Your Design
                     </label>
-                    <input class="bg-grey mb-20 w-full border-grey rad-6 p-10 pointer" id="design_file_prod_error" name="design_file" type="file" required >
+                    <input class="bg-grey mb-20 w-full border-grey rad-6 p-10 pointer" id="design_file_prod_error" name="design_file" type="file" required onchange="designFile(this);">
                     <div class="c-red txt-c disc" id="design_file_error"></div>
                 </div>
 
